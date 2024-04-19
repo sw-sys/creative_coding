@@ -18,13 +18,13 @@ def snowflake_side(length, levels):
     left(60)
     snowflake_side(length, levels - 1)
 
-def create_snowflake(length, levels):
-    snowflake_side(length, levels)
-    right(120)
-    snowflake_side(length, levels)
-    right(120)
-    snowflake_side(length, levels)
+def create_snowflake(sides, length):
+    colors = ["blue", "lightblue", "darkblue", "blue", "lightblue", "darkblue"]
+    for i in range(sides):
+        color(colors[i])
+        snowflake_side(length, sides)
+        right(360 / sides)
 
-create_snowflake(400, 3)
+create_snowflake(3, 300)
 
 mainloop()
