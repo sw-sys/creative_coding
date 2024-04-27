@@ -14,13 +14,6 @@ def draw_shape(size, x, y):
             color(c)
             forward(200)
             right(25)
-    # color("orange")
-    # fillcolor("yellow")
-    # begin_fill()
-    # for i in range(5):
-    #     forward(size)
-    #     right(144)
-    # end_fill()
 
 # Set up the turtle
 screen = Screen()
