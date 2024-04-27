@@ -13,7 +13,7 @@ def draw_star(size, x, y):
     begin_fill()
     for i in range(5):
         forward(size)
-        right(144)
+        right(100)
     end_fill()
 
 # Set up the turtle
